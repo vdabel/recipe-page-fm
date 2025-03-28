@@ -37,6 +37,7 @@
 
 .article {
   background-color: var(--white);
+  min-width: var(--mobile-width);
 }
 
 .article__figure {
@@ -200,6 +201,23 @@
   text-decoration: none;
 }
 
+@media (min-width: 375px) {
+  body {
+    background-color: var(--stone-100);
+  }
 
+  .article {
+    max-width: 736px;
+    margin: 100px auto;
+    border-radius: 20px;
+  }
 
+  .article__figure {
+    padding: 24px;
+  }
+
+  .article__image {
+    border-radius: 20px;
+  }
+}
 
